@@ -7,4 +7,8 @@ Il Contient : <br />
     - Un docker-compose avec tous nos containers <br />
     - Des fichiers CSV contenant nos données <br /><br /><br />
 
+On a un fichier exec.py dans le dossier projet qui permet de faire le traitement des données via un spark-submit mais on arrive pas à faire la visualisation avec le spark submit car on a des erreurs au niveau de l'import et de l'installation de pandas et seaborn.
+voici la commande spark-submit pour le run : './bin/spark-submit --master spark-master --deploy-mode client hdfs://namenode:9000/bases/exec.py
+
+
 Auteurs : Diouf Mohammed, Khattab Youssef, Toussenel Axel
